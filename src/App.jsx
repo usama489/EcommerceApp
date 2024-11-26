@@ -7,7 +7,9 @@ import CartPage from "./pages/cart/cartPage";
 import Layout from "./components/layout/Layout";
 import AllProduct from "./pages/allProduct/AllProduct";
 import Login from "./pages/registration/Login";
-import Signup from "./pages/registration/Signup";
+// import Signup from "./pages/registration/Signup";
+import UserDashboard from "./pages/user/UserDashboard";
+import AdminDashboard from "./pages/admin/AdminDashboard";
 
 
 const App = ()=>{
@@ -23,7 +25,10 @@ const App = ()=>{
         <Route path="/productinfo" element={<ProductInfo/>}/>
         <Route path="/cart" element={<CartPage/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
-        <Route path="signup" element={<Signup/>}></Route>
+        {/* <Route path="signup" element={<Signup/>}></Route> */}
+        <Route path="/user-dashboard" element={<UserDashboard/>}></Route>
+        <Route path="admin-dashboard" element={<AdminDashboard/>}></Route>
+
       </Routes>
       </Layout>
     </Router>

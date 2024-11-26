@@ -6,6 +6,7 @@ import {checkValidData} from "../../utils/validate";
 
 const Login = () => {
     const [isSignInForm,setIsSignInForm] = useState(true);
+    const [errorMessage,setErrorMessage] = useState([]);
     const name = useRef(null)
     const password = useRef(null)
     const email = useRef(null);
@@ -14,7 +15,15 @@ const Login = () => {
     }
     const handleSignInButtonClick = ()=>{
         const message = checkValidData(email.current.value,password.current.value)
-        if(message) console.log({message})
+        if(message){
+            // console.log(errorMessage[0])
+            setErrorMessage(message);
+            return;
+          
+        }
+        if(!isSignInForm){
+            //false SignUp logic
+        }
     }
     return (
         <div className='flex justify-center h-[60vh]   pm:flex min-w-screen  pm:w-10/12 pm:justify-center  overflow-x-hidden mx-10 my-10  items-center'>
@@ -71,6 +80,7 @@ const Login = () => {
                 </div>
 
                 <div>
+                    <h3 className="text-red-400 px-2">{`${errorMessage.join()}`}</h3>
                     <h2 className='text-black  sg:text-xl px-2'>{isSignInForm ? "Dont have an account" : "Have an account"} <Link className=' text-pink-500 sg:text-2xl font-bold' onClick={handleSignIn}>{isSignInForm ? "SignUp" : "Login"}</Link></h2>
                 </div>
 

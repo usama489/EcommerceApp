@@ -37,11 +37,11 @@ const category = [
 const Category = () => {
     return (
         <div>
-            <div className="flex flex-col mt-5">
+            <div className="flex flex-col mt-5 outline ">
                 {/* main 1 */}
                 <div className="flex overflow-x-scroll lg:justify-center  hide-scroll-bar">
                     {/* main 2  */}
-                    <div className="flex lg:flex-row ">
+                    <div className="flex lg:flex-row">
                         {/* category  */}
                         {category.map((item, index) => {
                             return (

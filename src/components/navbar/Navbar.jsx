@@ -10,8 +10,8 @@ const navbar = () => {
       <li><Link to="/allproduct"> All Product</Link></li>
       <li><Link to="/signup"> Signup</Link></li>
       {/* User */}
-      <li><Link to="/"> Kamal</Link></li>
-      {/* <li><Link to="/"> Admin</Link></li> */}
+      <li><Link to="/user-dashboard"> Kamal</Link></li>
+      <li><Link to="/admin-dashboard"> Admin</Link></li>
       {/* <li>logout</li> */}
       <li><Link to="/cart"> Cart(0)</Link></li>
       

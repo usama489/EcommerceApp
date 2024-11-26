@@ -9,8 +9,9 @@ export default withMT({
     screens:{
       'pm':"375px",
       'sg':"360px",
+      'ipmin':"768px",
        'mmd' :"912px",
-       'llg' :"1280px"
+       'llg' :"1024px"
       
     }
    
