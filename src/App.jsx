@@ -10,6 +10,7 @@ import Login from "./pages/registration/Login";
 // import Signup from "./pages/registration/Signup";
 import UserDashboard from "./pages/user/UserDashboard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import AddProductPage from "./pages/admin/AddProductPage";
 
 
 const App = ()=>{
@@ -28,6 +29,7 @@ const App = ()=>{
         {/* <Route path="signup" element={<Signup/>}></Route> */}
         <Route path="/user-dashboard" element={<UserDashboard/>}></Route>
         <Route path="admin-dashboard" element={<AdminDashboard/>}></Route>
+        <Route path="/addproduct" element={<AddProductPage/>}></Route>
 
       </Routes>
       </Layout>

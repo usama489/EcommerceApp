@@ -1,4 +1,7 @@
 import {Tabs, Tab, TabList, TabPanel} from "react-tabs";
+import ProductDetail from "../../components/admin/ProductDetail";
+import OrderDetail from "../../components/admin/OrderDetail";
+import UserDetail from "../../components/admin/UserDetail";
 
 const AdminDashboard = () => {
   return (
@@ -36,16 +39,16 @@ const AdminDashboard = () => {
 
         {/* Total Order */}
         
-        <Tab className="p-4 bg-pink-50  my-6  w-44 cursor-pointer border-2 border-pink-100 rounded-lg ">
+        <Tab className="p-4 bg-pink-50  my-6 mx-auto w-44 cursor-pointer border-2 border-pink-100 rounded-lg ">
           <img className="text-pink-400 h-12 w-full" src="../../src/assets/image/shopping-basket.svg"/>
-          <h2 className="title-font font-medium text-center text-3xl text-pink-400 fonts1">
+          <h2 className="title-font font-medium  text-center text-3xl text-pink-400 fonts1">
             10
           </h2>
           <p className=" text-pink-500 text-center font-bold llg:text-2xl">Total Products</p>
         </Tab>
 
 
-        <Tab className="p-4 bg-pink-50  my-6 w-44 cursor-pointer border-2 border-pink-100 rounded-lg ">
+        <Tab className="p-4 bg-pink-50  my-6 mx-auto w-44 cursor-pointer border-2 border-pink-100 rounded-lg ">
           <img className="text-pink-400 h-12  w-full" src="../../src/assets/image/list-ordered.svg"/>
           <h2 className="title-font font-medium text-center text-3xl text-pink-400 fonts1">
             10
@@ -55,23 +58,23 @@ const AdminDashboard = () => {
 
 
 
-        <Tab className="p-4 bg-pink-50 my-6 w-44 hover:bg-pink-100 cursor-pointer border-2 border-pink-100 rounded-lg">
+        <Tab className="p-4 bg-pink-50 my-6 mx-auto w-44 hover:bg-pink-100 cursor-pointer border-2 border-pink-100 rounded-lg">
           <img className="text-pink-400 h-12 w-full" src="../../src/assets/image/user.svg"/>
           <h2 className="title-font font-medium text-center text-3xl text-pink-400 fonts1">
             10
           </h2>
-          <p className=" text-pink-500 text-center font-bold llg:text-2xl">Total Order</p>
+          <p className=" text-pink-500 text-center font-bold llg:text-2xl">Total User</p>
         </Tab>
 
       </TabList>
-      <TabPanel>
-        All Product
+      <TabPanel> <ProductDetail></ProductDetail>
+     
       </TabPanel>
       <TabPanel>
-        All Order
+       <OrderDetail></OrderDetail>
       </TabPanel>
       <TabPanel>
-        All User
+        <UserDetail></UserDetail>
       </TabPanel>
       </Tabs>
       </div>
