@@ -2,7 +2,7 @@
 
 const NoPage = () => {
   return (
-    <div>All product</div>
+    <div>No Page</div>
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const UserDashboard = () => {
     const products = [
@@ -14,14 +14,17 @@ const UserDashboard = () => {
             quantity: 1,
         },
     ]
+    const user = JSON.parse(localStorage.getItem("users"));
     
   return (
     <div className='container h-screen  my-2 mx-auto '>
         {/* Top */}
         <div className='upperBoxContainer  h-56 px-10 mx-auto border-2 border-pink-100 rounded-lg bg-pink-50'>
             <img className=' mx-auto' src="https://cdn-icons-png.flaticon.com/128/2202/2202112.png"/>
-            <h3 className='name text-center'><span className='font-semibold'>Name : </span> Usama Khan Mehboob Ahmad</h3>
-            <h3 className='email text-center'><span className='font-semibold'>Email : </span>usamakhan@gmail.com</h3>
+            <h3 className='name text-center'><span className='font-semibold'>Name : </span> {user?.name}</h3>
+            <h3 className='email text-center'><span className='font-semibold'>Email : </span>{user?.email}</h3>
+            <h3 className='date text-center'><span className='font-semibold'>Date : </span>{user?.date}</h3>
+            <h3 className='role text-center'><span className='font-semibold'>Role : </span>{user?.role}</h3>
 
         </div>
 

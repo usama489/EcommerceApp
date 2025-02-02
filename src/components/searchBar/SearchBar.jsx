@@ -47,13 +47,13 @@ const SearchBar = () => {
 
 
   return (
-    <div className="flex justify-center py-0">
+    <div className="flex justify-center   py-0 ">
       {/* Input Box */}
-      <div className="input flex justify-center  items-center">
+      <div className="input flex justify-center  items-center  ">
         <input
           type="text"
           placeholder="search here"
-          className="text-black bg-gray-200 mmd:placeholder:text-xl mmd:text-xl placeholder-gray-400 rounded-lg h-10 px-2 mmd:h-[2.5rem] mmd:w-[25rem] sg:w-[18rem] w-96 lg:w-96 md:w-96 pm:w-72 outline-none"
+          className="text-black bg-gray-200 sg:h-8 mmd:flex mmd:justify-center border-2 border-red-400 mmd:placeholder:text-xl ipmin:text-2xl pm:text-sm pm:h-8   ipmin:w-96 ipmin:h-12 mmd:text-xl placeholder-gray-400 rounded-lg h-10 px-2 mmd:h-[2.5rem] mmd:w-[25rem] sg:w-[18rem] w-96 lg:w-4 md:w-96 outline-none"
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>

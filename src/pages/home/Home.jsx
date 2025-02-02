@@ -1,12 +1,11 @@
-
-import Layout from "../../components/layout/Layout";
 import Hero from "../../components/hero/Hero";
-import Category from "../../components/category/category";
+import Category from "../../components/category/Category";
 import HomePageProductCard from "../../components/homePageProductCard/homePageProductCard";
 import Track from "../../components/track/Track";
 import Testimonal from "../../components/testimonal/Testimonal";
 
 const Home = () => {
+ 
   return (
     <div>
      
@@ -16,6 +15,8 @@ const Home = () => {
         <HomePageProductCard />
         <Track/>
         <Testimonal/>
+        {/* <Loader/> */}
+        
     
       
     </div>
