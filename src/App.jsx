@@ -11,6 +11,7 @@ import Login from "./pages/registration/Login";
 import UserDashboard from "./pages/user/UserDashboard";
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import AddProductPage from "./pages/admin/AddProductPage";
+<<<<<<< HEAD
 import UpdateProductPage from "./pages/admin/UpdateProductPage";
 import {LoadingProvider} from "./context/MyContext"
 import { Toaster } from "react-hot-toast";
@@ -21,6 +22,8 @@ import CategoryPage from "./pages/category/CategoryPage";
 
 
 
+=======
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00
 
 
 const App = ()=>{
@@ -37,6 +40,7 @@ const App = ()=>{
         <Route path="/productinfo/:id" element={<ProductInfo/>}/>
         <Route path="/cart" element={<CartPage/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
+<<<<<<< HEAD
         
         {/* Protected Route and dynamic id*/}
         
@@ -46,6 +50,12 @@ const App = ()=>{
         <Route path="/updateproduct/:id" element={<ProtectedRouteForAdmin><UpdateProductPage/></ProtectedRouteForAdmin>}/>
         <Route path="categorypage/:categoryname" element={<CategoryPage/>}/>
       
+=======
+        {/* <Route path="signup" element={<Signup/>}></Route> */}
+        <Route path="/user-dashboard" element={<UserDashboard/>}></Route>
+        <Route path="admin-dashboard" element={<AdminDashboard/>}></Route>
+        <Route path="/addproduct" element={<AddProductPage/>}></Route>
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00
 
       </Routes>
       <Toaster/>

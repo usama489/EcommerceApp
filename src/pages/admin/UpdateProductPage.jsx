@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useNavigate, useParams } from "react-router-dom";
 import { LoadingContext } from "../../context/MyContext";
 import { useContext, useEffect, useState, } from "react";
@@ -219,8 +220,21 @@ const UpdateProductPage = () => {
           </div>
         </div>
       </div>
+=======
+import React from 'react';
+
+const UpdateProductPage = () => {
+  return (
+    <div>
+        Update Product Page
+      
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00
     </div>
   );
 }
 
+<<<<<<< HEAD
 export default UpdateProductPage;
+=======
+export default UpdateProductPage;
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00

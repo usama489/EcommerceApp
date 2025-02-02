@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useContext, useState } from "react";
 import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { LoadingContext } from "../../context/MyContext";
@@ -201,3 +202,17 @@ const AddProductPage = () => {
 }
 
 export default AddProductPage;
+=======
+import React from 'react'
+
+const AddProductPage = () => {
+  return (
+    <div>
+        Add product Page
+      
+    </div>
+  )
+}
+
+export default AddProductPage
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00

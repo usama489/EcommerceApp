@@ -2,8 +2,11 @@ import {Tabs, Tab, TabList, TabPanel} from "react-tabs";
 import ProductDetail from "../../components/admin/ProductDetail";
 import OrderDetail from "../../components/admin/OrderDetail";
 import UserDetail from "../../components/admin/UserDetail";
+<<<<<<< HEAD
 import { useContext } from "react";
 import { LoadingContext } from "../../context/MyContext";
+=======
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00
 
 const AdminDashboard = () => {
   const user = JSON.parse(localStorage.getItem("users"));
@@ -52,7 +55,11 @@ const AdminDashboard = () => {
         <Tab className="p-4 bg-pink-50  my-6 mx-auto w-44 cursor-pointer border-2 border-pink-100 rounded-lg ">
           <img className="text-pink-400 h-12 w-full" src="../../src/assets/image/shopping-basket.svg"/>
           <h2 className="title-font font-medium  text-center text-3xl text-pink-400 fonts1">
+<<<<<<< HEAD
             {getAllProduct.length}
+=======
+            10
+>>>>>>> 618db75bc572f824d9fdd08d6cd473c8eb99fe00
           </h2>
           <p className=" text-pink-500 text-center font-bold llg:text-2xl">Total Products</p>
         </Tab>
